@@ -1,9 +1,12 @@
 package com.abhi.common;
-//Ambiguous method call error
+// Ambiguous method call error
+// Java will have to find the most specific one.
+// Between Integer and String , none is more specific than the other
+// so Java can't decide which one to call.
 public class UseNullObjectTwo {
 
     public String getName(Integer name){
-        return "Object";
+        return "Integer";
     }
 
     public String getName(String name) {

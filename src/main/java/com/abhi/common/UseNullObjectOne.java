@@ -1,5 +1,8 @@
 package com.abhi.common;
-
+// Between Object and String, both take null.
+// String is subclass of Object and more specific
+// So, String will call.
+// Java will have to find the most specific one
 public class UseNullObjectOne {
 
     public String getName(Object name){
