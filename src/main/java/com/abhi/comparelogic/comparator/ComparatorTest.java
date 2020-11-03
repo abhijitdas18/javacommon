@@ -1,9 +1,9 @@
-package com.abhi.comparelogic;
+package com.abhi.comparelogic.comparator;
 
 import java.util.Arrays;
 import java.util.Comparator;
-
-public class ComparatorExample {
+// Sorting needs to be done on attributes of different objects
+public class ComparatorTest {
 
     public static void main(String[] args) {
         Person[] persons = new Person[4];

@@ -1,4 +1,6 @@
-package com.abhi.comparelogic;
+package com.abhi.comparelogic.sort;
+
+import com.abhi.comparelogic.comparator.Person;
 
 import java.util.Arrays;
 

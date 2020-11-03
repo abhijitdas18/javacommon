@@ -1,4 +1,4 @@
-package com.abhi.comparelogic;
+package com.abhi.comparelogic.comparator;
 
 import java.util.Comparator;
 
