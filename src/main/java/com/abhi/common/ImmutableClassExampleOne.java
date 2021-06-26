@@ -25,12 +25,6 @@ public class ImmutableClassExampleOne {
         student = new Student("abhijit", 45, "Bangalore", markMap);
         System.out.println("New Student object details:" + student);
 
-
-
-
-
-
-
     }
 
 }

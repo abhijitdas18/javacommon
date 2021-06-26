@@ -3,6 +3,8 @@ class Base {
 
     public int no = 10;
 
+    public int roll =  100;
+
     public String say = "Hello";
 
     public static final int amount  = 100;
@@ -31,16 +33,17 @@ class Base {
 
 public class InheritanceObjectMappingOne extends Base{
 
+    public int roll = 200;
     public String say = "World";
 
-    public  int amount = 200;
+    public  int amount = 200; // static variable can  override, but it is not overridden
 
     public void getName() {
-        System.out.println("This is InheritanceObjectMappingOne");
+        System.out.println("This is derived");
     }
 
     void getCity(){
-        System.out.println("This is InheritanceObjectMappingOne - city");
+        System.out.println("This is derived - city");
     }
 
     // cannot override static method
@@ -48,20 +51,22 @@ public class InheritanceObjectMappingOne extends Base{
         System.out.println("This is InheritanceObjectMappingOne - state");
     }*/
     public static void main(String[] args) {
-        Base obj = new InheritanceObjectMappingOne();
-        obj.getName();
+        Base base = new InheritanceObjectMappingOne();
+        base.getName();  // This is derived - public method override
 
-        obj.getAge();
+        base.getAge();  // This is base - age   - Not override
 
-        //obj.getAddress(); Not accessible
+        //base.getAddress(); Not accessible  - private method
 
-        //obj.getCity(); Not accessible
+        //base.getCity(); Not accessible  - private method
 
-        System.out.println(obj.no); // 10
+        System.out.println(base.no); // 10   - base
 
-        System.out.println(obj.say); // Hello - base class variable
+        System.out.println(base.roll);  // 100 - base   Instance variables CANNOT be overridden
 
-        System.out.println(obj.amount); // 100
+        System.out.println(base.say); // Hello - Instance variables CANNOT be overridden
+
+        System.out.println(base.amount); // 100
     }
 }
 
