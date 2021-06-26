@@ -6,6 +6,7 @@ interface MyInterface {
     // int height ;  // initialization is must for final var
 
 }
+
 public class InterfaceExampleOne {
 
     public static void main(String[] args) {
